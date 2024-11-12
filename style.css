@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+    background-color: #eaf5ff;
+}
+
+.container{
+    background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 90%;
+}
+
+.header{
+    padding: 20px 40px;
+    color: #91bce4;
+    text-shadow: 1px 1px #ccc;
+    background-color: #f3f9ff;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-control.success .bxs-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error .bxs-error-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+button{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 2px 5px #f0f0f0;
+    background-color: #91bce4;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 10px;
+}
